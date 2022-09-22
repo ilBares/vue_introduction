@@ -1,6 +1,3 @@
-#Build settings
-theme: cayman
-
 # Vue Introduction
 Introduction to Vue 2 and Vue 3.
 
