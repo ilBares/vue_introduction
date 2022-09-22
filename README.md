@@ -2,7 +2,10 @@
 Introduction to Vue 2 and Vue 3.
 
 #Vue
-Data and DOM are linked and everything is reactive.
+Data and DOM are linked and everything is reactive.  
+###Directives
+DIrectives are special attributes provided by Vue and they apply special reactive behavior to the rendered DOM.
+>__v-bind__ (:) ->
 
 
 #Vue 2
@@ -26,7 +29,7 @@ var app = new Vue({
 ```
 With | el: '#app' | the Vue App attaches itself to a single DOM element then fully controls it.  
 In the index.html you have to write:  
-```javascript
+```html
 <script src="main.js"></script>
 ```
 
@@ -34,7 +37,7 @@ ___
 
 #Vue 3
 > To create a Vue 3 app:
-```
+```javascript
 import { createApp } from 'vue'
 
 createApp({
