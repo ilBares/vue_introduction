@@ -26,7 +26,7 @@ var app = new Vue({
 ```
 With | el: '#app' | the Vue App attaches itself to a single DOM element then fully controls it.  
 In the index.html you have to write:  
-```js
+```
 <script src="main.js"></script>
 ```
 
