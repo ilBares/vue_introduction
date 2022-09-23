@@ -19,6 +19,7 @@ Directives are special attributes provided by Vue and they apply special reactiv
 # Vue 2
 > To add Vue framework to the project:  
 ```html
+<!-- .html -->
 <!-- development version, includes helpful console warnings -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
@@ -26,8 +27,10 @@ Directives are special attributes provided by Vue and they apply special reactiv
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 ```
 ___
+In the index.html you have to write:  
 > To create a Vue 2 app:  
 ```javascript
+// .js
 var app = new Vue({
   el: '#app',
   data: {
@@ -35,12 +38,11 @@ var app = new Vue({
   }
 })
 ```
-___
-With | el: '#app' | the Vue App attaches itself to a single DOM element then fully controls it.  
-In the index.html you have to write:  
 ```html
+<!-- .html -->
 <script src="main.js"></script>
 ```
+With | el: '#app' | the Vue App attaches itself to a single DOM element then fully controls it.  
 ___
 > To define a new component called todo-item:
 ```javascript
@@ -58,6 +60,7 @@ ___
 > Vue 3 supports __Single-File Component__, or __SFC__ files (*.vue). It encapsulates the component's logic (Javascript), template (HTML) and styles (CSS) in a single file.
 > To create a Vue 3 app:  
 ```javascript
+// ,js
 import { createApp } from 'vue'
 
 createApp({
