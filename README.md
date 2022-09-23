@@ -6,10 +6,12 @@ Data and DOM are linked and everything is reactive.
 __Rectivity__ meas that Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happan.
 ### Directives
 Directives are special attributes provided by Vue and they apply special reactive behavior to the rendered DOM.
-- __v-bind__ (:)<pre>    keeps the referred element up-to-date</pre>
-- __v-if__<pre>          toggles the precence of an element</pre>
-- __v-show__<pre>        show an element only if the condition is true</pre>
-- __v-for__<pre>         used for displaying a list of items using the data from an Array</pre>
+- __v-bind__ (:)<pre>keeps the referred element up-to-date</pre>
+- __v-if__<pre>toggles the precence of an element</pre>
+- __v-show__<pre>show an element only if the condition is true</pre>
+- __v-for__<pre>used for displaying a list of items using the data from an Array</pre>
+- __v-on__<pre>attaches event listeners that invoke methods on our Vue instances. It listens for specific events (like "clicl")</pre>
+- __v-model__<pre>it makes two-way binging between element and data</pre>
 
 
 # Vue 2
