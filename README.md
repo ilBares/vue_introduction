@@ -13,6 +13,8 @@ Directives are special attributes provided by Vue and they apply special reactiv
 - __v-on__<pre>attaches event listeners that invoke methods on our Vue instances. It listens for specific events (like "clicl")</pre>
 - __v-model__<pre>it makes two-way binging between element and data</pre>
 
+### Components
+> The components system is an abstraction that allows us to build large-scale applications composed of small and reusable components.
 
 # Vue 2
 > To add Vue framework to the project:  
@@ -33,12 +35,23 @@ var app = new Vue({
   }
 })
 ```
+  
 With | el: '#app' | the Vue App attaches itself to a single DOM element then fully controls it.  
 In the index.html you have to write:  
 ```html
 <script src="main.js"></script>
 ```
+  
+> To define a new component called todo-item:
+```javascript
+// Define a new component called todo-item
+Vue.component('todo-item', {
+  template: '<li>This is a todo</li>'
+})
 
+var app = new Vue(...)
+```
+  
 ___
 
 # Vue 3
