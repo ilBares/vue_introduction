@@ -5,7 +5,10 @@ Introduction to Vue 2 and Vue 3.
 Data and DOM are linked and everything is reactive.  
 __Rectivity__ meas that Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happan.
 ### Directives
-Directives are special attributes provided by Vue and they apply special reactive behavior to the rendered DOM.
+Directives are special attributes provided by Vue and they apply special reactive behavior to the rendered DOM.  
+Directive structure:
+<pre>v-[directive name]:[argument name]</pre>  
+__Directives__:  
 - __v-bind__ (:)<pre>keeps the referred element up-to-date</pre>
 - __v-if__<pre>toggles the precence of an element</pre>
 - __v-show__<pre>show an element only if the condition is true</pre>
