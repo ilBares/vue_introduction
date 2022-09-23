@@ -32,7 +32,7 @@ In the index.html you have to write:
 ```javascript
 // .js
 var app = new Vue({
-  el: '#app',
+  el: '#app', // attaches itself to a single DOM element, then fully controls it
   data: {
     message: 'Hello Vue!'
   }
@@ -42,7 +42,6 @@ var app = new Vue({
 <!-- .html -->
 <script src="main.js"></script>
 ```
-With | el: '#app' | the Vue App attaches itself to a single DOM element then fully controls it.  
 ___
 > To define a new component called todo-item:
 ```javascript
