@@ -15,6 +15,7 @@ Directives are special attributes provided by Vue and they apply special reactiv
 
 ### Components
 > The components system is an abstraction that allows us to build large-scale applications composed of small and reusable components.
+> Vue component model allow us to encapsulate custom content and logic in each component.
 
 # Vue 2
 > To add Vue framework to the project:  
