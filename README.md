@@ -35,13 +35,13 @@ var app = new Vue({
   }
 })
 ```
-  
+___
 With | el: '#app' | the Vue App attaches itself to a single DOM element then fully controls it.  
 In the index.html you have to write:  
 ```html
 <script src="main.js"></script>
 ```
-  
+___
 > To define a new component called todo-item:
 ```javascript
 // Define a new component called todo-item
@@ -51,8 +51,7 @@ Vue.component('todo-item', {
 
 var app = new Vue(...)
 ```
-  
-___
+===
 
 # Vue 3
 > Vue 3 supports __Single-File Component__, or __SFC__ files (*.vue). It encapsulates the component's logic (Javascript), template (HTML) and styles (CSS) in a single file.
