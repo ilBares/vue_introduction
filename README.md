@@ -42,7 +42,7 @@ var app = new Vue({
   }
 })
 ```
-```html
+```HTML
 <!-- .html -->
 <script src="main.js"></script>
 ```
