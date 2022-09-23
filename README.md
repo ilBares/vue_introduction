@@ -25,7 +25,7 @@ __Directives__:
 
 # Vue 2
 > To add Vue framework to the project:  
-```html
+```HTML
 <!-- .html -->
 <!-- development version, includes helpful console warnings -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
