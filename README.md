@@ -4,11 +4,11 @@ Introduction to Vue 2 and Vue 3.
 # Vue
 Data and DOM are linked and everything is reactive.  
 __Rectivity__ meas that Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happan.
-### Directives
+## Directives
 Directives are special attributes provided by Vue and they apply special reactive behavior to the rendered DOM.  
 Directive structure:
 <pre>v-[directive name]:[argument name]</pre>  
-__Directives__:  
+#### Main directives:  
 - __v-bind__ (:)<pre>keeps the referred element up-to-date</pre>
 - __v-if__<pre>toggles the precence of an element</pre>
 - __v-show__<pre>show an element only if the condition is true</pre>
@@ -31,7 +31,7 @@ To add Vue framework to the project:
 <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 ```
 ___
-In the index.html you have to write:  
+
 To create a Vue 2 app:  
 ```javascript
 // .js
@@ -42,6 +42,8 @@ var app = new Vue({
   }
 })
 ```
+
+In the index.html you have to write:  
 ```html
 <!-- .html -->
 <script src="main.js"></script>
@@ -61,10 +63,11 @@ ___
 
 # Vue 3
 > Vue 3 supports __Single-File Component__, or __SFC__ files (*.vue). It encapsulates the component's logic (Javascript), template (HTML) and styles (CSS) in a single file.  
+  
 To create a Vue 3 app:  
 
 ```javascript
-// ,js
+// .js
 import { createApp } from 'vue'
 
 createApp({
