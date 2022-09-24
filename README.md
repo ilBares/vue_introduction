@@ -21,7 +21,7 @@ __Directives__:
 > Vue component model allow us to encapsulate custom content and logic in each component.
 
 # Vue 2
-> To add Vue framework to the project:  
+To add Vue framework to the project:  
 ```html
 <!-- .html -->
 <!-- development version, includes helpful console warnings -->
@@ -32,7 +32,7 @@ __Directives__:
 ```
 ___
 In the index.html you have to write:  
-> To create a Vue 2 app:  
+To create a Vue 2 app:  
 ```javascript
 // .js
 var app = new Vue({
@@ -47,7 +47,7 @@ var app = new Vue({
 <script src="main.js"></script>
 ```
 ___
-> To define a new component called todo-item:
+To define a new component called todo-item:  
 ```javascript
 // Define a new component called todo-item
 Vue.component('todo-item', {
@@ -61,7 +61,7 @@ ___
 
 # Vue 3
 > Vue 3 supports __Single-File Component__, or __SFC__ files (*.vue). It encapsulates the component's logic (Javascript), template (HTML) and styles (CSS) in a single file.
-> To create a Vue 3 app:  
+To create a Vue 3 app:  
 ```javascript
 // ,js
 import { createApp } from 'vue'
