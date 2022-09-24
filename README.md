@@ -10,7 +10,7 @@ Directive structure:
 - __v-if__<pre>toggles the precence of an element</pre>
 - __v-show__<pre>show an element only if the condition is true</pre>
 - __v-for__<pre>used for displaying a list of items using the data from an Array</pre>
-- __v-on__<pre>attaches event listeners that invoke methods on our Vue instances. It listens for specific events (like "clicl")</pre>
+- __v-on__ (@) <pre>attaches event listeners that invoke methods on our Vue instances. It listens for specific events (like "click", "mousemove", ...)</pre>
 - __v-model__<pre>it makes two-way binging between element and data</pre>
 
 ### Components
@@ -48,6 +48,7 @@ In the index.html you have to write:
 ___
 To define a new component called todo-item:  
 ```javascript
+// .js
 // Define a new component called todo-item
 Vue.component('todo-item', {
   template: '<li>This is a todo</li>'
@@ -75,3 +76,13 @@ createApp({
   }
 }).mount('#app')
 ```
+
+
+
+/////// TO REMOVE
+si puo aggiungere il file .env per aggiungere variabili di environment (dopo è necessario riavviare il server)
+.env.development
+.env.production
+
+formato variabile:
+VUE_APP_URL_SERVER=www.bares.com
