@@ -62,6 +62,7 @@ ___
 # Vue 3
 > Vue 3 supports __Single-File Component__, or __SFC__ files (*.vue). It encapsulates the component's logic (Javascript), template (HTML) and styles (CSS) in a single file.  
 To create a Vue 3 app:  
+
 ```javascript
 // ,js
 import { createApp } from 'vue'
