@@ -1,7 +1,4 @@
-# Vue Introduction
-Introduction to Vue 2 and Vue 3.
-
-# Vue
+# Vue js
 Data and DOM are linked and everything is reactive.  
 __Rectivity__ meas that Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happan.
 ## Directives
