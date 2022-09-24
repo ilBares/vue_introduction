@@ -81,8 +81,8 @@ createApp({
 
 /////// TO REMOVE
 si puo aggiungere il file .env per aggiungere variabili di environment (dopo è necessario riavviare il server)
-.env.development
-.env.production
+.env.development    -> usato da npm run serve
+.env.production     -> usato da npm run build
 
 formato variabile:
 VUE_APP_URL_SERVER=www.bares.com
