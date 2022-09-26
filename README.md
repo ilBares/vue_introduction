@@ -1,10 +1,13 @@
 # Vue js
 Data and DOM are linked and everything is reactive.  
-__Rectivity__ meas that Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happan.
+__Rectivity__ meas that Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happan.  
+The Vue framework uses Shadow DOM that allows hidden DOM trees to be attached to elements in the regular DOM tree.  
+
 ## Directives
 Directives are special attributes provided by Vue and they apply special reactive behavior to the rendered DOM.  
 Directive structure:
 <pre>v-[directive name]:[argument name]</pre>  
+
 #### Main directives:  
 - __v-bind__ (:)<pre>keeps the referred element up-to-date</pre>
 - __v-if__<pre>toggles the precence of an element</pre>
@@ -13,9 +16,34 @@ Directive structure:
 - __v-on__ (@) <pre>attaches event listeners that invoke methods on our Vue instances. It listens for specific events (like "click", "mousemove", ...)</pre>
 - __v-model__<pre>it makes two-way binging between element and data</pre>
 
-### Components
+## Vue Instance
+### Options / Data
+To access Options you have to write: ```javascript vm.$[option] ```
+- __data__ | _Function_ | <pre>Vue will recyrsively convert its properties into getter/setters to make it "reactive".</pre>
+- __props__ | _ArrayList<String>_ or _Object_ | <pre>A list of attributes that are exposed to accept data from the parent component.</pre>
+With Object-based syntax, you can use following options: _type_, _default_, _required_, _validator_.
+- __computed__ <pre>Computed properties to be mixed into Vue instance. Computed property are cached, and only re-computed on reactive dependency changes.</pre>
+- __methods__ | [key: String]: Function] | <pre>Methods to be mixed into the Vue instance.</pre>
+- __watch__ <pre>An object where keys are expressions to watch and values are the corrisponding callbacks.</pre>
+
+### Options / DOM
+- __el__ | _String_ | <pre>Provide the Vue instance an existing DOM element to mount on. If this option is not available at instantiation, the user will have to explicitly call _vm.$mount()_.</pre>
+- __template__ | _String_ | <pre>A string template to be used as the markup for the Vue instance. The template will replace the mounted element.</pre>
+  
+### Options / Lifecycle Hooks
+LifeCycle Diagram: https://v2.vuejs.org/images/lifecycle.png
+- __beforeCreate__ | _Function_ | <pre>Called synchronously immediately after the instance has been initialized, before data observation and event/watcher setup.</pre>
+- __created__ | _Function_ | <pre>Called synchronously after the instance is created (the instance has already finished processing the options).</pre>
+- __beforeMount__ | _Function_ |
+- __mounted__ | _Function_ |
+- __beforeUpdate__ | _Function_ |
+- __updated__ | _Function_ |
+- __beforeDestroy__ | _Function_ |
+- __destroyed__ | _Function_ |
+  
+## Components
 > The components system is an abstraction that allows us to build large-scale applications composed of small and reusable components.
-> Vue component model allow us to encapsulate custom content and logic in each component.
+> Vue component model allow us to encapsulate custom content and logic in each component. Vue components are also Vue instances, so accept the same option object.
 
 # Vue 2
 To add Vue framework to the project:  
@@ -32,7 +60,8 @@ ___
 To create a Vue 2 app:  
 ```javascript
 // .js
-var app = new Vue({
+// "vm" stands for "ViewModel" (MVVM pattern)
+var vm = new Vue({
   el: '#app', // attaches itself to a single DOM element, then fully controls it
   data: {
     message: 'Hello Vue!'
@@ -55,6 +84,18 @@ Vue.component('todo-item', {
 })
 
 var app = new Vue(...)
+```
+
+### Vue Instance structure:
+```javascript
+// .js
+var vm = new Vue({
+  // options
+  data() { return ... },
+  prop: { ... },
+  computed() { return ... },
+  methods: {}
+})
 ```
 ___
 ___
