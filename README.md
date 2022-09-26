@@ -19,27 +19,27 @@ Directive structure:
 ## Vue Instance
 ### Options / Data
 To access Options you have to write: ```javascript vm.$[option] ```
-- __data__ | _Function_ | <pre>Vue will recyrsively convert its properties into getter/setters to make it "reactive".</pre>
-- __props__ | _ArrayList<String>_ or _Object_ | <pre>A list of attributes that are exposed to accept data from the parent component.</pre>
+- __data__ || _Function_ <pre>Vue will recyrsively convert its properties into getter/setters to make it "reactive".</pre>
+- __props__ || _ArrayList<String>_ or _Object_ <pre>A list of attributes that are exposed to accept data from the parent component.</pre>
 With Object-based syntax, you can use following options: _type_, _default_, _required_, _validator_.
 - __computed__ <pre>Computed properties to be mixed into Vue instance. Computed property are cached, and only re-computed on reactive dependency changes.</pre>
-- __methods__ | [key: String]: Function] | <pre>Methods to be mixed into the Vue instance.</pre>
+- __methods__ || [key: String]: Function] <pre>Methods to be mixed into the Vue instance.</pre>
 - __watch__ <pre>An object where keys are expressions to watch and values are the corrisponding callbacks.</pre>
 
 ### Options / DOM
-- __el__ | _String_ | <pre>Provide the Vue instance an existing DOM element to mount on. If this option is not available at instantiation, the user will have to explicitly call _vm.$mount()_.</pre>
-- __template__ | _String_ | <pre>A string template to be used as the markup for the Vue instance. The template will replace the mounted element.</pre>
+- __el__ || _String_ <pre>Provide the Vue instance an existing DOM element to mount on. If this option is not available at instantiation, the user will have to explicitly call _vm.$mount()_.</pre>
+- __template__ || _String_ <pre>A string template to be used as the markup for the Vue instance. The template will replace the mounted element.</pre>
   
 ### Options / Lifecycle Hooks
 LifeCycle Diagram: https://v2.vuejs.org/images/lifecycle.png
-- __beforeCreate__ | _Function_ | <pre>Called synchronously immediately after the instance has been initialized, before data observation and event/watcher setup.</pre>
-- __created__ | _Function_ | <pre>Called synchronously after the instance is created (the instance has already finished processing the options).</pre>
-- __beforeMount__ | _Function_ |
-- __mounted__ | _Function_ |
-- __beforeUpdate__ | _Function_ |
-- __updated__ | _Function_ |
-- __beforeDestroy__ | _Function_ |
-- __destroyed__ | _Function_ |
+- __beforeCreate__ || _Function_ <pre>Called synchronously immediately after the instance has been initialized, before data observation and event/watcher setup.</pre>
+- __created__ || _Function_ <pre>Called synchronously after the instance is created (the instance has already finished processing the options).</pre>
+- __beforeMount__ || _Function_
+- __mounted__ || _Function_
+- __beforeUpdate__ || _Function_
+- __updated__ || _Function_
+- __beforeDestroy__ || _Function_
+- __destroyed__ || _Function_
   
 ## Components
 > The components system is an abstraction that allows us to build large-scale applications composed of small and reusable components.
