@@ -1,5 +1,3 @@
-https://ilbares.github.io/vue_introduction/
-
 # Vue js
 Data and DOM are linked and everything is reactive.  
 __Rectivity__ meas that Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happan.
@@ -88,3 +86,6 @@ si puo aggiungere il file .env per aggiungere variabili di environment (dopo è 
 
 formato variabile:
 VUE_APP_URL_SERVER=www.bares.com
+
+
+https://ilbares.github.io/vue_introduction/
