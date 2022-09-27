@@ -55,6 +55,11 @@ LifeCycle Diagram: https://v2.vuejs.org/images/lifecycle.png
 - __mixins__ | _Array<Object>_ | <pre>The mixins option accepts an array of mixin object.</pre>
 - __extends__ | _Object_ or _Function_ | <pre>Allows extending another component.</pre>
   
+## Class and Style Bindings
+We can pass an object to ``` v-bind:class ``` to dynamically toggle classes:
+``` <div v-bind:class=" { active: isActive }" // active class will be determined by the truthiness of isActive```
+
+
 ## Components
 > The components system is an abstraction that allows us to build large-scale applications composed of small and reusable components.
 > Vue component model allow us to encapsulate custom content and logic in each component. Vue components are also Vue instances, so accept the same option object.
