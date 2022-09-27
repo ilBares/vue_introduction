@@ -1,7 +1,8 @@
 # Vue js
 Data and DOM are linked and everything is reactive.  
-__Rectivity__ meas that Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happan.  
+__Rectivity__ meas that Vue automatically tracks JavaScript state changes and efficiently updates the DOM when changes happand.  
 The Vue framework uses Shadow DOM that allows hidden DOM trees to be attached to elements in the regular DOM tree.  
+Vue tries to render elements as efficiently as possible, often re-using them instead of rendering from scratch. You can controll Reusable Elements with ``` key ```.
 
 ## Directives
 Directives are special attributes provided by Vue and they apply special reactive behavior to the rendered DOM.  
@@ -11,9 +12,10 @@ Directive structure:
 #### Main directives:  
 - __v-bind__ (:)<pre>keeps the referred element up-to-date</pre>
 - __v-once__ <pre>does not update on data change</pre>
-- __v-if__<pre>toggles the precence of an element</pre>
-- __v-show__<pre>show an element only if the condition is true</pre>
-- __v-for__<pre>used for displaying a list of items using the data from an Array</pre>
+- __v-if__<pre>it is used to conditionally render a block. We use _v-if_ on a _<template>_ element if we want to toggle more than one element.</pre> 
+- __v-else__ <pre>it is related to _v-if_ directive. That directive must follow a _v-if_ or a _v-else_if_ directive.</pre>
+- __v-show__<pre>it shows the element only if the condition is true. It does not support the _<template>_ element.</pre>
+- __v-for__<pre>it is sed for displaying a list of items using the data from an Array. v-for supports an optional second argument: _v-for="(item, index) in items"_ It is suggested to always use _key_ with _v-for_.</pre>
 - __v-on__ (@) <pre>attaches event listeners that invoke methods on our Vue instances. It listens for specific events (like "click", "mousemove", ...)</pre>
 - __v-model__<pre>it makes two-way binging between element and data</pre>
 - __v-html__ <pre>it is used to output real HTML<pre>
@@ -57,7 +59,12 @@ LifeCycle Diagram: https://v2.vuejs.org/images/lifecycle.png
   
 ## Class and Style Bindings
 We can pass an object to ``` v-bind:class ``` to dynamically toggle classes:
-``` <div v-bind:class=" { active: isActive }" // active class will be determined by the truthiness of isActive```
+``` <div v-bind:class=" { active: isActive }" // active class will be determined by the truthiness of isActive```  
+The array syntax for ``` v-bind:style ``` allows you to apply multiple style objects to the same element:
+```html
+<!-- .html -->
+<div :style="[baseStyles, overridingStyles]"></div>
+```
 
 
 ## Components
