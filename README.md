@@ -18,7 +18,7 @@ Directive structure:
 - __v-for__<pre>it is sed for displaying a list of items using the data from an Array. v-for supports an optional second argument: _v-for="(item, index) in items"_ It is suggested to always use _key_ with _v-for_.</pre>
 - __v-on__ (@) <pre>attaches event listeners that invoke methods on our Vue instances. It listens for specific events (like "click", "mousemove", ...)</pre>
 - __v-model__<pre>it makes two-way binging between element and data</pre>
-- __v-html__ <pre>it is used to output real HTML<pre>
+- __v-html__ <pre>it is used to output real HTML</pre>
 
 ## Vue Instance
 When a Vue instance is created, it adds all the properties found in its _data_ object to Vue's __reactivity system__. When the values of those properties change, the view will "react", updating to match the new values.  
