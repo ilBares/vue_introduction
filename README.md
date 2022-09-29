@@ -12,7 +12,7 @@ Directive structure:
 #### Main directives:  
 - __v-bind__ (:)<pre>keeps the referred element up-to-date</pre>
 - __v-once__ <pre>does not update on data change</pre>
-- __v-if__<pre>it is used to conditionally render a block. We use _v-if_ on a _<template>_ element if we want to toggle more than one element.</pre> 
+- __v-if__<pre>it is used to conditionally render a block. We use _v-if_ on a _template_ element if we want to toggle more than one element.</pre> 
 - __v-else__ <pre>it is related to _v-if_ directive. That directive must follow a _v-if_ or a _v-else_if_ directive.</pre>
 - __v-show__<pre>it shows the element only if the condition is true. It does not support the _<template>_ element.</pre>
 - __v-for__<pre>it is sed for displaying a list of items using the data from an Array. v-for supports an optional second argument: _v-for="(item, index) in items"_ It is suggested to always use _key_ with _v-for_.</pre>
