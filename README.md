@@ -144,6 +144,8 @@ createApp({
 }).mount('#app')
 ```
 
+# VUEX
+Vuex is a state management library for the Vue applications. It serves as a centralized data store for all components in an application.
 
 
 /////// TO REMOVE
